@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/sammy007/open-ethereum-pool/util"
+	"github.com/maxus0089/open-ethereum-pool/util"
 )
 
 const (
@@ -128,12 +128,20 @@ func (cs *Session) handleTCPMessage(s *ProxyServer, req *StratumReq) error {
 			log.Println("Malformed stratum request params from", cs.ip)
 			return err
 		}
+
 		reply, errReply := s.handleTCPSubmitRPC(cs, req.Worker, params)
 		if errReply != nil {
 			return cs.sendTCPError(req.Id, errReply)
 		}
 		return cs.sendTCPResult(req.Id, &reply)
 	case "eth_submitHashrate":
+		var params []string
+		err := json.Unmarshal(*req.Params, &params)
+		if err != nil {
+			log.Println("Malformed stratum request params from", cs.ip)
+			return err
+		}
+
 		return cs.sendTCPResult(req.Id, true)
 	default:
 		errReply := s.handleUnknownRPC(cs, req.Method)

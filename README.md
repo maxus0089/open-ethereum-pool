@@ -2,9 +2,9 @@
 
 ![Miner's stats page](https://15254b2dcaab7f5478ab-24461f391e20b7336331d5789078af53.ssl.cf1.rackcdn.com/ethereum.vanillaforums.com/editor/pe/cf77cki0pjpt.png)
 
-[![Join the chat at https://gitter.im/sammy007/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sammy007/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/sammy007/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/sammy007/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/sammy007/open-ethereum-pool)](https://goreportcard.com/report/github.com/sammy007/open-ethereum-pool)
+[![Join the chat at https://gitter.im/maxus0089/open-ethereum-pool](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/maxus0089/open-ethereum-pool?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/maxus0089/open-ethereum-pool.svg?branch=develop)](https://travis-ci.org/maxus0089/open-ethereum-pool) [![Go Report Card](https://goreportcard.com/badge/github.com/maxus0089/open-ethereum-pool)](https://goreportcard.com/report/github.com/maxus0089/open-ethereum-pool)
 
-[List Of Open Ethereum Pools](https://github.com/sammy007/open-ethereum-pool/wiki/List-Of-Open-Pools)
+[List Of Open Ethereum Pools](https://github.com/maxus0089/open-ethereum-pool/wiki/List-Of-Open-Pools)
 
 ### Features
 
@@ -19,7 +19,7 @@
 
 #### Proxies
 
-* [Ether-Proxy](https://github.com/sammy007/ether-proxy) HTTP proxy with web interface
+* [Ether-Proxy](https://github.com/maxus0089/ether-proxy) HTTP proxy with web interface
 * [Stratum Proxy](https://github.com/Atrides/eth-proxy) for Ethereum
 
 ### Building on Linux
@@ -39,7 +39,7 @@ First install  [go-ethereum](https://github.com/ethereum/go-ethereum/wiki/Instal
 Clone & compile:
 
     git config --global http.https://gopkg.in.followRedirects true
-    git clone https://github.com/sammy007/open-ethereum-pool.git
+    git clone https://github.com/maxus0089/open-ethereum-pool.git
     cd open-ethereum-pool
     make
 
@@ -311,7 +311,7 @@ This pool is tested to work with [Ethcore's Parity](https://github.com/ethcore/p
 
 ### Credits
 
-Made by sammy007. Licensed under GPLv3.
+Made by maxus0089. Licensed under GPLv3.
 
 #### Contributors
 
